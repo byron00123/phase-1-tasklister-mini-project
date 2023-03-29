@@ -1,8 +1,10 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   
   document.querySelector('form').addEventListener('submit',(e)=>{
     e.preventDefault()
-    buildToDo(e.target.new_task.value)
+    //console.log(e.target.new_todo)
+    buildToDo(e.target.new_todo.value)
     })
   })
     function buildToDo(todo){
